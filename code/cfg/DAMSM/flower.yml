@@ -1,0 +1,31 @@
+CONFIG_NAME: 'DAMSM'
+
+DATASET_NAME: 'birds'
+DATA_DIR: 'G:\an\Lightweight-Manipulation-master\data\flower\flower'
+GPU_ID: '0'
+WORKERS: 1
+
+
+TREE:
+    BRANCH_NUM: 3
+    BASE_SIZE: 299
+
+
+TRAIN:
+    FLAG: True
+    NET_E: 'G:\an\Lightweight-Manipulation-master\output\birds_DAMSM_2024_05_21_07_51_05\Model\text_encoder185.pth'
+    BATCH_SIZE: 44
+    MAX_EPOCH: 200
+    SNAPSHOT_INTERVAL: 5
+    ENCODER_LR: 0.002
+    RNN_GRAD_CLIP: 0.25
+    SMOOTH:
+        GAMMA1: 4.0
+        GAMMA2: 5.0
+        GAMMA3: 10.0
+
+
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
