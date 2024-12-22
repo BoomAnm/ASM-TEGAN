@@ -1,2 +1,0 @@
-# ASM-TEGAN
-ASM-TEGAN
